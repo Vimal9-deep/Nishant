@@ -1,0 +1,84 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 4fr 2fr ;
+    margin-top: 20px;
+}
+
+.canadalogo{
+    height: 50px;
+}
+
+
+
+.firstrow{
+    background-color: rgba(149, 216, 255, 0.952);
+    font-style: italic;
+    font-family: ;
+    border-left: solid rgba(235, 227, 227, 0.911);
+    height:60px;
+    font: bolder;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.secondrow{
+    border-left:solid rgb(207, 204, 204);
+    border-bottom: solid rgb(207, 204, 204);
+    border-left-width: 2px;
+    border-bottom-width: 1px;
+}
+
+.accept{
+    font-size: smaller;
+    color: rgba(144, 2, 163, 0.932);
+}
+
+.secondrow1{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.secondrow2{
+    display:flex;
+    flex-basis: 10px;
+    gap:10px;
+}
+
+.secondrow3{
+    color:rgb(0, 94, 0);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.secondrow4{
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+
+.secondrow5{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: smaller;
+}
+
+.logo{
+    height:40px;
+    margin-left:10px;
+    margin-top:10px;
+    border-radius: 50%; 
+}
+
+.click{
+    color:black;
+    text-decoration: none;
+}
+
+.more{
+    color:rgba(144, 2, 163, 0.932);
+    text-decoration: none;
+    
+}
+
+

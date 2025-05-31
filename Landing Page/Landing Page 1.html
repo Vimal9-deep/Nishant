@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MilesAbroad – Study Abroad Made Easy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Toggle navbar menu
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+  <style>
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .marquee {
+      animation: marquee 20s linear infinite;
+    }
+
+  .animated-gradient {
+    background: linear-gradient(120deg, #ebf8ff, #dbeafe, #ffffff);
+    background-size: 400% 400%;
+    animation: waveGradient 15s ease infinite;
+  }
+
+  @keyframes waveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="flex items-center justify-between p-4 md:px-10">
+      <div class="text-xl font-bold text-blue-700">MilesAbroad</div>
+      
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="/Visit Community/Homepage of Visit Community.html">Visit Community</a>
+        <a href="/Find Students/Find Students Home page.html">Find Students</a>
+        <a href="/Miles.html">Explore Colleges</a>
+        <a href="/Events/Events Homepage.html">Events</a>
+        <a href="/Study Materials and Resources Section/Web Pages of Study Materials (HTML CSS JS)/Home Page of Study Material and Resources.html">Study Materials</a>
+      </nav>
+      
+      <!-- Login Button -->
+      <a href="https://forms.gle/Dsq5jS7anpFZUEMM7" class="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700">Login / Signup</a>
+
+      <!-- Hamburger -->
+      <button class="md:hidden" onclick="toggleMenu()">
+        <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
+      <a href="#" class="block py-2">Home</a>
+      <a href="/Visit Community/Homepage of Visit Community.html" class="block py-2">Visit Community</a>
+      <a href="/Find Students/Find Students Home page.html" class="block py-2">Find Students</a>
+      <a href="/Miles.html" class="block py-2">Explore Colleges</a>
+      <a href="/Events/Events Homepage.html" class="block py-2">Events</a>
+      <a href="/Study Materials and Resources Section/Web Pages of Study Materials (HTML CSS JS)/Home Page of Study Material and Resources.html" class="block py-2">Study Materials</a>
+      <a href="https://forms.gle/Dsq5jS7anpFZUEMM7" class="block py-2 text-blue-700 font-semibold">Login / Signup</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-blue-50 via-blue-100 to-white flex flex-col md:flex-row items-center px-6 py-10 md:px-20 md:py-20">
+    <!-- Text Content -->
+    <div class="md:w-1/2 space-y-6">
+      <h1 class="text-4xl md:text-5xl font-bold text-blue-700">Your Gateway to Studying Abroad</h1>
+      <p class="text-gray-700 text-lg md:text-xl">We help students from every background achieve their dream of studying overseas. Transparent, trusted, and tailored for you.</p>
+      <div class="flex space-x-4 mt-4">
+        <a href="https://forms.gle/Dsq5jS7anpFZUEMM7" class="bg-red-500 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-red-600">Get Started</a>
+        <a href="#" class="text-blue-600 font-semibold flex items-center">Watch Video ▶</a>
+      </div>
+      <div class="flex items-center mt-6 space-x-4">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white" />
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-10 h-10 rounded-full border-2 border-white -ml-4" />
+        <img src="https://randomuser.me/api/portraits/men/55.jpg" class="w-10 h-10 rounded-full border-2 border-white -ml-4" />
+        <span class="text-gray-600 text-sm ml-2">Connect to the World</span>
+      </div>
+    </div>
+
+    <!-- Image + Founder Info -->
+    <div class="md:w-1/2 mt-10 md:mt-0 flex flex-col items-center text-center">
+      <img src="/Landing Page/1685115700419.jpg"
+     alt="Founder"
+     class="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-lg mx-auto" />
+      <div class="mt-4 space-y-2">
+        <h3 class="text-xl font-semibold text-blue-700">Nishant Kumar</h3>
+        <p class="text-gray-700 text-sm">Founder | Your dreams will come true with us </p>
+        <p class="text-gray-600 text-sm max-w-xs mx-auto">Our mission is to simplify and democratize studying abroad for students across India — making it accessible, empowering, and transformative.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Feature Strip -->
+  <div class="bg-white py-4 border-t border-gray-200 overflow-hidden">
+    <div class="whitespace-nowrap marquee text-sm font-semibold text-gray-600 flex items-center gap-16">
+      <span>✅ Study Abroad Educational Loan</span>
+      <span>🎓 Free Exam Study Material</span>
+      <span>🇮🇳 Empowering Dreams Across India</span>
+      <span>💼 100% Visa Guidance</span>
+      <span>📚 Personalized Counseling</span>
+    </div>
+  </div>
+
+  <!-- Salary Showcase Section -->
+<section class="bg-gradient-to-r from-blue-50 to-blue-100 py-12 px-4 md:px-20">
+  <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-4">
+    Invest in Your Dreams. Here’s the Payoff.
+  </h2>
+  <p class="text-center text-blue-700 mb-8 text-lg">
+    Get inspired by the salaries international graduates earn abroad ✨
+  </p>
+  <p class="text-center text-gray-600 text-sm italic mb-6">Swipe to explore salaries ➡️</p>
+
+  <!-- Scrollable cards container -->
+  <div class="flex space-x-6 overflow-x-auto px-2 scrollbar-hide">
+    <!-- Card 1 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">MS in Data Science</h3>
+      <p class="text-gray-700">Salary in USA</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">$110,000/yr</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">MBA in Analytics</h3>
+      <p class="text-gray-700">Salary in UK</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">£65,000/yr</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">Healthcare Management</h3>
+      <p class="text-gray-700">Salary in USA</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">$90,000/yr</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">Computer Science</h3>
+      <p class="text-gray-700">Salary in Canada</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">CAD 85,000/yr</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">Electrical Engineering</h3>
+      <p class="text-gray-700">Salary in Australia</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">AUD 100,000/yr</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">Cybersecurity</h3>
+      <p class="text-gray-700">Salary in USA</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">$105,000/yr</p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">AI & Machine Learning</h3>
+      <p class="text-gray-700">Salary in UK</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">£70,000/yr</p>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">Finance</h3>
+      <p class="text-gray-700">Salary in Canada</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">CAD 75,000/yr</p>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">Product Management</h3>
+      <p class="text-gray-700">Salary in USA</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">$115,000/yr</p>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="min-w-[240px] bg-white rounded-2xl shadow-md p-6 transition transform hover:scale-105 duration-200">
+      <h3 class="text-xl font-semibold text-blue-800 mb-2">International Business</h3>
+      <p class="text-gray-700">Salary in Australia</p>
+      <p class="text-red-600 font-bold text-2xl mt-2">AUD 95,000/yr</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Founder's Message Section -->
+<section class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-50 via-white to-blue-50 px-6 py-12">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+    <!-- Founder Photo and Info -->
+    <div class="flex flex-col items-center md:w-1/3">
+      <img src="/Landing Page/1685115700419.jpg" alt="Founder" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-blue-200 shadow-md" />
+      <div class="text-center mt-4">
+        <h3 class="text-xl font-bold text-gray-800">Nishant Kumar</h3>
+        <h4 class="text-xl font-bold text-gray-800">Please Read the Founder's Message</h4>
+        <p class="text-sm text-gray-600">Founder, MilesAbroad</p>
+      </div>
+    </div>
+
+    <!-- Message Content -->
+    <div class="md:w-2/3">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Your Dreams Matter</h2>
+      <p class="text-gray-700 text-base leading-relaxed mb-4">
+        🌍 Don't worry if you don't have enough budget. At <strong>MilesAbroad</strong>, we believe your dreams deserve a runway — regardless of your financial background.
+      </p>
+      <p class="text-gray-700 text-base leading-relaxed mb-4">
+        🏦 <span class="font-semibold text-blue-600">We partner with leading financial institutions</span> to help you cover your <span class="text-red-500 font-semibold">tuition fees</span>, <span class="text-red-500 font-semibold">living costs</span>, and even your <span class="text-red-500 font-semibold">flight tickets</span>. 
+        If you have an offer letter, your dream is already halfway there.
+      </p>
+      <p class="text-gray-700 text-base leading-relaxed mb-4">
+        💸 We also <span class="font-semibold text-green-600">waive application fees</span> for many top universities. Just register with us, and we’ll help you every step of the way.
+      </p>
+
+      <!-- Icons Row -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        <div class="flex flex-col items-center">
+          <img src="/Logo/Loan Logo.jpg" alt="Loan Help" class="w-10 h-10" />
+          <p class="text-sm text-gray-600 mt-2 text-center">Loan Assistance</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="/Logo/Flight Ticket Logo.webp" alt="Ticket Support" class="w-10 h-10" />
+          <p class="text-sm text-gray-600 mt-2 text-center">Flight Support</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="/Logo/Fee Waiver Logo.jpg" alt="Fee Waiver" class="w-10 h-10" />
+          <p class="text-sm text-gray-600 mt-2 text-center">Fee Waiver</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="/Logo/One to One support Logo.jpg" alt="24/7 Support" class="w-10 h-10" />
+          <p class="text-sm text-gray-600 mt-2 text-center">1:1 Support</p>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="mt-8 text-center md:text-left">
+        <a href="https://forms.gle/Dsq5jS7anpFZUEMM7" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded shadow">
+          Register Now – It’s Free
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0A1E42] text-gray-200 py-14 px-6 md:px-20">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <!-- Logo & Copyright -->
+    <div>
+      <h2 class="text-2xl font-bold text-white mb-3">MilesAbroad</h2>
+      <p class="text-sm text-gray-400 mb-6">Helping Indian students achieve global dreams.</p>
+      <p class="text-xs text-gray-500">© 2025 MilesAbroad. All rights reserved.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-sm font-semibold text-white mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li><a href="#" class="hover:text-white">About Us</a></li>
+        <li><a href="#" class="hover:text-white">Top Courses</a></li>
+        <li><a href="#" class="hover:text-white">How It Works</a></li>
+        <li><a href="#" class="hover:text-white">Student Success</a></li>
+      </ul>
+    </div>
+
+    <!-- Info -->
+    <div>
+      <h3 class="text-sm font-semibold text-white mb-4">Information</h3>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-white">Refund Policy</a></li>
+        <li><a href="#" class="hover:text-white">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact the Founder -->
+    <div>
+      <h3 class="text-sm font-semibold text-white mb-4">Contact the Founder</h3>
+      <p class="text-sm mb-1 text-gray-300">📞 +91 9205584220</p>
+      <p class="text-sm mb-1 text-gray-300">📧 nishantkumar2012301@gmail.com</p>
+      <p class="text-sm mb-4 text-gray-300">👤 Nishant | Founder & CEO</p>
+
+      <div class="flex space-x-4">
+        <a href="#" class="bg-white text-[#0A1E42] rounded-full p-2 hover:bg-gray-300 transition duration-300">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="bg-white text-[#0A1E42] rounded-full p-2 hover:bg-gray-300 transition duration-300">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="bg-white text-[#0A1E42] rounded-full p-2 hover:bg-gray-300 transition duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="bg-white text-[#0A1E42] rounded-full p-2 hover:bg-gray-300 transition duration-300">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

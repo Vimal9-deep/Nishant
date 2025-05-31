@@ -1,0 +1,39 @@
+/* Logo size */
+.Torontologo {
+  height: 80px;
+  width: 80px;
+}
+
+.firstrow{
+  background-color: rgba(149, 216, 255, 0.952);
+  font-style: italic;
+  font-family: ;
+  border-left: solid rgba(235, 227, 227, 0.911);
+  height:60px;
+  font: bolder;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.secondrow{
+  height: 40px;
+  max-height: 100px;
+  border-left:solid rgb(207, 204, 204);
+  border-bottom: solid rgb(207, 204, 204);
+  border-left-width: 2px;
+  border-bottom-width: 1px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 5fr 2fr 3fr 2fr 4fr ;
+  margin-top: 20px;
+}
+
+.thirdrow{
+  background-color: rgb(248, 241, 234);
+}
+
+
